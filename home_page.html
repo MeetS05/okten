@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Hamburger Menu</title>
+    <link rel="stylesheet" href="asset/css/home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+
+        <div class="container">
+            <div class="logo" style="background-color: white;">
+                <img src="asset/images/logo-stell-light.png" alt="Logo">
+                <!-- <span>hello</span>
+                <p>Oil & Gas Industry</p> -->
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="hover-underline">HOME<span class="ps-1"></span></a>
+                    </li>
+                    <li>
+                    <li><a href="#" class="hover-underline">GALLERY<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul>
+                            <li><a href="#">About </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Team</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">FAQ</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Elements</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Typography</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">404</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="hover-underline">Projects<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul>
+                            <li><a href="#">Projects Regular</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Projects Title</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Projects Extended</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover-underline">Services<span class="ps-1"></span></a>
+                    </li>
+                    <li><a href="#" class="hover-underline">Shop<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul>
+                            <li><a href="#">Cart </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Checkout </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">My account </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover-underline">
+                            Blog</a></li>
+                    <li><a href="#" class="hover-underline">
+                            Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-menu">
+                <!-- <span class="phone-number">800 123 4567</span> -->
+                <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Content goes here...
+        </div>
+    </div>
+
+
+
+    <!-- img section start -->
+    <div class="container">
+        <div class="photo">
+            <img src="asset/images/img08.jpg" alt="">
+        </div>
+        <div class="photo2">
+            <img src="asset/images/slider_layer_upper.png" alt="">
+        </div>
+        <div class="text-container">
+            <div class="main-text">
+                <h4 class="size">Nor again is there</h4>
+            </div>
+            <div class="main-text1">
+                <h1 style="font-size: 70px; font-weight: 200;">Steel <span style="font-weight: 700;">production</span>
+                </h1>
+            </div>
+            <div class="button-container">
+                <button class="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-1 -->
+    <div class="container mt-5">
+        <section class="services">
+            <div class="row p">
+                <div class="col-md-4 img-1">
+                    <img src="asset/images/img01.jpg" alt="Titanium Welding" class="img-fluid">
+                    <div class="icon">
+                        <i class="fas fa-tools"></i>
+                        <h2>Titanium Welding</h2>
+                    </div>
+                    <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="asset/images/img02.jpg" alt="Mobile Welding" class="img-fluid">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                        <h2>Mobile Welding</h2>
+                    </div>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-form">
+                        <div class="icon">
+                            <i class="far fa-comments"></i>
+                            <h2>Have a Question?</h2>
+
+                        </div>
+                        <p class="txt">Get an answer within 20 minutes!</p>
+                        <form id="contactForm">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <button type="submit">Send <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="asset/images/img03.jpg" alt="Stainless Steel Welding" class="img-fluid">
+                    <div class="icon">
+                        <i class="fas fa-file-alt"></i>
+                        <h2>Stainless Steel Welding</h2>
+                    </div>
+                    <p>Donec placerat lobortis sapien, at aliquam felis sodales et.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="asset/images/img04.jpg" alt="Magnesium Welding" class="img-fluid">
+                    <div class="icon">
+                        <i class="fas fa-atom"></i>
+                        <h2>Magnesium Welding</h2>
+                    </div>
+                    <p>Nullam porta sem eget ullamcorper lobortis. Sed et lectus id risus facilisis.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="asset/images/img05.jpg" alt="Pipe Welding" class="img-fluid">
+                    <div class="icon">
+                        <i class="fas fa-recycle"></i>
+                        <h2>Pipe Welding</h2>
+                    </div>
+                    <p>Aenean sodales nisl sapien, sed tempus tellus mollis non. Quisque in.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- section-1 -->
+
+    <!-- section-2 -->
+    <div class="container mt-5">
+        <section class="about-us">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <h1 class="title">ABOUT US</h1>
+                        <h2>Our credo is product quality and reliability.</h2>
+                        <ul>
+                            <li>Ut enim ad minima veniam, quis nostrum.</li>
+                            <li>Exercitationem ullam corporis suscipit laboriosam.</li>
+                            <li>Nisi ut aliquid ex ea commodi.</li>
+                        </ul>
+                        <div class="signature">
+                            <img src="asset/images/ceo.png" alt="CEO" class="rounded-circle">
+                            <div class="sign ml-3">
+                                <p>John Doe</p>
+                                <img src="asset/images/sig.png" alt="Signature">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 about-images">
+                    <!-- <div class="image-1"> -->
+                    <div class="image-stack">
+                        <img src="asset/images/photo1.jpg" alt="Image 1" class="img-fluid main-image img-2">
+                        <img src="asset/images/photo2.jpg" alt="Image 2" class="img-fluid overlay-image img-3">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="scripts.js"></script> -->
+    <!-- section-2 -->
+
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
