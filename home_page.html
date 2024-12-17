@@ -12,7 +12,6 @@
 
 </head>
 
-<body>
     <header class="navbar">
 
         <div class="container">
@@ -200,11 +199,14 @@
                 <div class="col-md-6">
                     <div class="content">
                         <h1 class="title">ABOUT US</h1>
-                        <h2>Our credo is product quality and reliability.</h2>
+                        <h2 class="title-1">Our credo is product quality and reliability.</h2>
                         <ul>
-                            <li>Ut enim ad minima veniam, quis nostrum.</li>
-                            <li>Exercitationem ullam corporis suscipit laboriosam.</li>
-                            <li>Nisi ut aliquid ex ea commodi.</li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#" target="_self"> Ut enim ad minima
+                                    veniam, quis nostrum.</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#" target="_self"> Exercitationem ullam
+                                    corporis suscipit laboriosam.</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="#" target="_self"> Nisi ut aliquid ex ea
+                                    commodi.</a></li>
                         </ul>
                         <div class="signature">
                             <img src="asset/images/ceo.png" alt="CEO" class="rounded-circle">
@@ -216,24 +218,86 @@
                     </div>
                 </div>
                 <div class="col-md-6 about-images">
-                    <!-- <div class="image-1"> -->
+                    <!-- <div class="img-1">
+                        <img src="asset/images/ani1.png" alt="">
+                        <img src="asset/images/ani2.png" alt="">
+                    </div> -->
                     <div class="image-stack">
                         <img src="asset/images/photo1.jpg" alt="Image 1" class="img-fluid main-image img-2">
                         <img src="asset/images/photo2.jpg" alt="Image 2" class="img-fluid overlay-image img-3">
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- <script src="scripts.js"></script> -->
     <!-- section-2 -->
 
+    <!-- timer section -->
+    <section class="stats-section mt-5">
+        <div class="container">
+            <h2>WE ARE PROUD</h2>
+            <p class="txt-1">We do awesome contribute for our clients. Check some of our counter</p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat">
+                        <div class="number" id="counter1">4500</div> <!-- Set initial value -->
+                        <div>Excepteur sint</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat">
+                        <div class="number" id="counter2">1020</div> <!-- Set initial value -->
+                        <div>Occaecat cupidatat</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat">
+                        <div class="number" id="counter3">600</div> <!-- Set initial value -->
+                        <div>Consectetur adipisci</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat">
+                        <div class="number" id="counter4">138</div> <!-- Set initial value -->
+                        <div>Dolorem eum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Counter Animation Script -->
+    <script>
+        $(document).ready(function(){
+            // Animate numbers from 0 to the actual number
+            $('.number').each(function () {
+                var value = parseInt($(this).text(), 10); // Get the value and ensure it's a number
+                $(this).prop('Counter', 0).animate({
+                    Counter: value
+                }, {
+                    duration: 4000, // Animation duration in ms
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now)); // Update number as it animates
+                    }
+                });
+            });
+        });
+    </script>
+     <!-- timer section -->
+
     <!-- Bootstrap JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </body>
 
 </html>
