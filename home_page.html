@@ -10,8 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
+<body>
     <header class="navbar">
 
         <div class="container">
@@ -89,13 +101,16 @@
 
 
     <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            Content goes here...
+    <div class="container">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                Content goes here...
+            </div>
         </div>
     </div>
 
@@ -238,14 +253,15 @@
     <!-- section-2 -->
 
     <!-- timer section -->
-    <section class="stats-section mt-5">
+    <section class="stats-section">
         <div class="container">
-            <h2>WE ARE PROUD</h2>
-            <p class="txt-1">We do awesome contribute for our clients. Check some of our counter</p>
+            <div class="height1"></div>
+                <h2>WE ARE PROUD</h2>
+                <p class="txt-1">We do awesome contribute for our clients. Check some of our counter</p>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="stat">
-                        <div class="number" id="counter1">4500</div> <!-- Set initial value -->
+                        <div class="number" id="counter1">4500 +</div> <!-- Set initial value -->
                         <div>Excepteur sint</div>
                     </div>
                 </div>
@@ -267,18 +283,19 @@
                         <div>Dolorem eum</div>
                     </div>
                 </div>
+            <div class="height"></div>
             </div>
         </div>
     </section>
-    
+
     <!-- Bootstrap & jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <!-- Counter Animation Script -->
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // Animate numbers from 0 to the actual number
             $('.number').each(function () {
                 var value = parseInt($(this).text(), 10); // Get the value and ensure it's a number
@@ -294,10 +311,261 @@
             });
         });
     </script>
-     <!-- timer section -->
+    <!-- timer section -->
 
     <!-- Bootstrap JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+
+
+    <!--Meet Out Team start  -->
+<!-- <div class="container"> -->
+    <section class="team-section text-center py-5">
+        <div class="container">
+            <h2 class="mb-4">Meet Our Team</h2>
+            <p class="mb-5">Quisque hendrerit odio sed mattis varius. Sed pharetra congue est eu <br>imperdiet. Vestibulum
+                ante ipsum primis.</p>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="inner-item">
+                        <div class="team-member">
+                            <div class="mwt-team-image-wrap">
+                                <img src="asset/images/img-2.png" alt="Main Metallurgist" class="img-fluid">
+                                <a href="https://webdesign-finder.com/oktan-steel-production-v2/member/"
+                                    class="mwt-team-media-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-detail">
+                        <h4>Engineer</h4>
+                        <p class="text-muted">Darrell Steward	</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner-item">
+                        <div class="team-member">
+                            <div class="mwt-team-image-wrap">
+                                <img src="asset/images/img-1.png" alt="Main Metallurgist" class="img-fluid">
+                                <a href="https://webdesign-finder.com/oktan-steel-production-v2/member/"
+                                    class="mwt-team-media-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-detail">
+                        <h4>Metallurgist</h4>
+                        <p class="text-muted">Albert Flores</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner-item">
+                        <div class="team-member">
+                            <div class="mwt-team-image-wrap">
+                                <img src="asset/images/img-3.png" alt="Main Metallurgist" class="img-fluid">
+                                <a href="https://webdesign-finder.com/oktan-steel-production-v2/member/"
+                                    class="mwt-team-media-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-detail">
+                        <h4>Main metallurgist</h4>
+                        <p class="text-muted">Neil  Carpenter</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner-item">
+                        <div class="team-member">
+                            <div class="mwt-team-image-wrap">
+                                <img src="asset/images/img-4.png" alt="Main Metallurgist" class="img-fluid">
+                                <a href="https://webdesign-finder.com/oktan-steel-production-v2/member/"
+                                    class="mwt-team-media-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-detail">
+                        <h4>Engineer</h4>
+                        <p class="text-muted">Main Metallurgist</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="Custom">
+                <button class="prev rounded-circle"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next rounded-circle"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+<!-- </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Owl Carousel JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+           var owl= $(".owl-carousel").owlCarousel({
+                loop: true,
+            margin: 10,
+            autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+            $(".next").click(function () {
+            owl.trigger('next.owl.carousel');
+        });
+        $(".prev").click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        });
+        });
+    </script>
+
+
+    
+    <!-- Meet Out Team -->
+
+
+    <!-- our project start -->
+    <section class="projects">
+        <div class="container mt-5">
+          <div class="row">
+            <!-- Left Side: Text -->
+            <div class="col-md-6">
+              <div class="projects-text">
+                <h2 class="txt-2">We Are Proud</h2>
+                <h1 class="txt-3">Our Projects</h1>
+                <p class="txt-4">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+                  ex ea
+                  commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                  molestiae
+                  consequatur vel illum.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Right Side: Carousel and Tabs -->
+            <div class="col-md-6 position-relative">
+                <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="factory-tab" data-toggle="tab" href="#factory" role="tab" aria-controls="factory" aria-selected="false">Factory</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="industry-tab" data-toggle="tab" href="#industry" role="tab" aria-controls="industry" aria-selected="false">Industry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="gas-tab" data-toggle="tab" href="#gas" role="tab" aria-controls="gas" aria-selected="false">Gas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="oil-tab" data-toggle="tab" href="#oil" role="tab" aria-controls="oil" aria-selected="false">Oil</a>
+                  </li>
+                </ul>
+              
+                <div class="tab-content mt-4" id="myTabContent">
+                  <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="owl-carousel owl-theme mt-4">
+                      <div class="item"><img src="../new-site/asset/images/all-1.jpg" alt="Image 1"></div>
+                      <div class="item"><img src="../new-site/asset/images/all-2.jpg" alt="Image 2"></div>
+                      <div class="item"><img src="../new-site/asset/images/all-3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="../new-site/asset/images/all-4.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="../new-site/asset/images/all-5.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="../new-site/asset/images/all-6.jpg" alt="Image 3"></div>
+                    </div>
+                  </div>
+              
+                  <div class="tab-pane fade" id="factory" role="tabpanel" aria-labelledby="factory-tab">
+                    <div class="owl-carousel owl-theme mt-4">
+                      <div class="item"><img src="image1.jpg" alt="Image 1"></div>
+                      <div class="item"><img src="image2.jpg" alt="Image 2"></div>
+                      <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+                      <div class="item"><img src="image4.jpg" alt="Image 4"></div>
+                      <div class="item"><img src="image5.jpg" alt="Image 5"></div>
+                    </div>
+                  </div>
+              
+                  <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="industry-tab">
+                    <img src="industry.jpg" alt="Industry">
+                  </div>
+                  <div class="tab-pane fade" id="gas" role="tabpanel" aria-labelledby="gas-tab">
+                    <img src="gas.jpg" alt="Gas">
+                  </div>
+                  <div class="tab-pane fade" id="oil" role="tabpanel" aria-labelledby="oil-tab">
+                    <img src="oil.jpg" alt="Oil">
+                  </div>
+                </div>
+              </div>
+       
+      </section>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- Owl Carousel JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      
+      <script>
+        $(document).ready(function () {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 2
+              }
+            }
+          });
+        });
+      </script>
+
+    <!-- our project end -->
+</body>
 
 </html>
