@@ -1,166 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabbed Navigation</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-  <style>
-    .owl-theme .owl-nav {
-      margin-top: 10px;
-      position: absolute;
-      transform: rotate(90deg);
-      bottom: 0px;
-      left: -23px;
-    }
-
-    .owl-dots {
-      display: none;
-    }
-    .owl-theme .owl-nav {
-    margin-top: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Reset */
+        .menu ul li ul {
+    display: none;
+    opacity: 0;
     position: absolute;
-    transform: rotate(90deg);
-    left: -60px;
-    top: 110px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    list-style: none;
+    font-size: 16px;
+    word-spacing: 10px;
+    padding: 10px;
+    top: 100%; /* Fixed position under navbar */
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    width: 231px;
+    text-align: center;
+    border: 1px solid #E7E8E9;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: hidden;
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-    background: red;
-    color: inherit;
-    border: none;
-    padding: 0!important;
-    font: inherit;
-    transform: rotate(270deg);
-    width: 29px;
+
+
+
+.menu ul li ul li {
+    padding: 10px 0;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
-    background-color: yellow;
-    border: none;
+
+.menu ul li ul li a {
+    color: black;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
 }
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-   background-color: yellow;
-   border: none;
+
+.menu ul li ul li a:hover {
+    background-color: #f8c12c;
+    color: white;
 }
-ul#myTab {
-    gap: 30px;
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1010;
+    background-color: #f8c12c;
+    padding: 10px 0;
 }
-.nav-tabs {
-    border-bottom: none;
+
+* {
+    margin: 0;
+    padding: 0 !important;
+    box-sizing: border-box;
 }
-  </style>
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+    max-width: 1800px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 58px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu ul li {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(6, 0, 0);
+    font-size: 0.9rem;
+    padding-bottom: 7px;
+    display: inline-block;
+    font-weight: 500;
+    padding: 34px 0;
+    margin: 0 10px;
+    transition-duration: 0.15s;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+.menu ul li:hover > ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: calc(100% + 10px); /* Adjust dropdown position */
+}
+
+    </style>
 </head>
-
 <body>
-  <section class="projects">
-    <div class="container mt-5">
-      <div class="row">
-        <!-- Left Side: Text -->
-        <div class="col-md-6">
-          <div class="projects-text">
-            <h2>We Are Proud</h2>
-            <h1>Our Projects</h1>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-              ex ea
-              commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-              molestiae
-              consequatur vel illum.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
+    <header class="navbar">
+
+        <div class="container">
+            <div class="logo" style="background-color: white;">
+                <img src="asset/images/logo-stell-light.png" alt="Logo">
+                <!-- <span>hello</span>
+                <p>Oil & Gas Industry</p> -->
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="hover-underline">HOME<span class="ps-1"></span></a>
+                    </li>
+                    <li>
+                    <li><a href="#" class="hover-underline">GALLERY<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul>
+                            <li><a href="#">About </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Team</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">FAQ</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Elements</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Typography</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">404</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="hover-underline">Projects<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul>
+                            <li><a href="#">Projects Regular</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Projects Title</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Projects Extended</a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover-underline">Services<span class="ps-1"></span></a>
+                    </li>
+                    <li><a href="#" class="hover-underline">Shop<span class="ps-1"><i
+                                    class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul>
+                            <li><a href="#">Cart </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">Checkout </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                            <li><a href="#">My account </a></li>
+                            <div class="divider " style="border-bottom: 1px solid #E7E8E9;"></div>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover-underline">
+                            Blog</a></li>
+                    <li><a href="#" class="hover-underline">
+                            Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-menu">
+                <!-- <span class="phone-number">800 123 4567</span> -->
+                <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <!-- Right Side: Carousel and Tabs -->
-        <div class="col-md-6 position-relative  ">
-          <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
-                aria-selected="true">All</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="factory-tab" data-toggle="tab" href="#factory" role="tab" aria-controls="factory"
-                aria-selected="false">Factory</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="industry-tab" data-toggle="tab" href="#industry" role="tab"
-                aria-controls="industry" aria-selected="false">Industry</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="gas-tab" data-toggle="tab" href="#gas" role="tab" aria-controls="gas"
-                aria-selected="false">Gas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="oil-tab" data-toggle="tab" href="#oil" role="tab" aria-controls="oil"
-                aria-selected="false">Oil</a>
-            </li>
-          </ul>
-          <div class="tab-content mt-4" id="myTabContent">
-            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-              <div class="owl-carousel owl-theme mt-4">
-                <div class="item"><img src="image1.jpg" alt="Image 1"></div>
-                <div class="item"><img src="image2.jpg" alt="Image 2"></div>
-                <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="item"><img src="image4.jpg" alt="Image 4"></div>
-                <div class="item"><img src="image5.jpg" alt="Image 5"></div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="factory" role="tabpanel" aria-labelledby="factory-tab">
-              <img src="factory.jpg" alt="Factory">
-            </div>
-            <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="industry-tab">
-              <img src="industry.jpg" alt="Industry">
-            </div>
-            <div class="tab-pane fade" id="gas" role="tabpanel" aria-labelledby="gas-tab">
-              <img src="gas.jpg" alt="Gas">
-            </div>
-            <div class="tab-pane fade" id="oil" role="tabpanel" aria-labelledby="oil-tab">
-              <img src="oil.jpg" alt="Oil">
-            </div>
-          </div>
-          <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
-        </div>
-      </div>
-    </div>
-   
-  </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 2
-          }
-        }
-      });
-    });
-  </script>
+    
 </body>
-
 </html>
