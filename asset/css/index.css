@@ -4,6 +4,9 @@
   padding: 0 !important;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -682,8 +685,12 @@ p {
 
   p {
     font-size: 16px;
-    margin-left: 10px;
-  }
+    padding: 0 3px !important;
+    text-align: start !important;
+}
+  img.img-fluid {
+    width: 461px;
+}
 }
 
 /* section-1 */
