@@ -692,6 +692,12 @@ p {
     width: 461px;
 }
 }
+@media (min-width:360) {
+  input.button2 {
+    margin-left: -30px;
+}
+  
+}
 
 /* section-1 */
 
