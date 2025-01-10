@@ -875,7 +875,7 @@ img.img-fluid.overlay-image.img-3 {
     /* align-items: flex-start; */
   }
   .col-md-6 {
-    width: 320px;
+    width: 320px !important;
   }
   .signature img {
     width: 50px;
