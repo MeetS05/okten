@@ -2113,7 +2113,7 @@ i.fab.fa-instagram:hover {
     font-size: 1.2rem;
   }
   svg#allSvg {
-    width: 315px;
+    width: 315px !important;
   }
 }
 
