@@ -1569,7 +1569,13 @@ button.next.rounded-circle-4 {
 @media (max-width: 576px) {
   .projects-text {
     padding: 0;
+    width: 423px;
   }
+  .position-relative {
+    position: relative!important;
+    /* justify-content: center; */
+    width: 100% !important;
+}
 
   .splide__arrow {
     top: 90% !important;
