@@ -699,7 +699,7 @@ p {
 }
 @media (max-width: 320px) {
   .item {
-    width: 466px;
+    width: 330px;
   }
 }
 
@@ -1198,6 +1198,12 @@ button.next.rounded-circle:hover {
   button.next.rounded-circle {
     position: absolute;
     right: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .inner-item {
+    width: 321px;
   }
 }
 
@@ -1745,8 +1751,8 @@ input.button2:hover {
   .row .col-md-4 img {
     margin-bottom: 10px;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    width: 425px;
-}
+    width: 320px;
+  }
   @media (max-width: 320px) {
     img.card-img-top {
       width: 320px;
@@ -1863,7 +1869,7 @@ button.next.rounded-circle-2:hover {
   .shadow-effect {
     height: 371px;
     width: 320px !important;
-}
+  }
 
   #customers-testimonials .item {
     padding: 30px;
@@ -1907,7 +1913,7 @@ button.next.rounded-circle-2:hover {
   .shadow-effect {
     height: 371px;
     width: 320px !important;
-}
+  }
   p {
     text-align: center;
   }
