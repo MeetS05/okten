@@ -446,7 +446,6 @@ h1.size {
   .breadcrumb {
     margin: 0 auto;
   }
-
 }
 /* main section end */
 
@@ -561,7 +560,7 @@ img.img-fluid.overlay-image.img-3 {
     margin: -16% 0% -7% 1%;
   }
   .row .col-md-4 {
-    padding: 5px !important;
+    padding: 0 !important;
     margin-bottom: 15px;
   }
 
@@ -636,6 +635,16 @@ img.img-fluid.overlay-image.img-3 {
 @media (max-width: 480px) {
   .services {
     padding: 5px;
+    width: 100%;
+  }
+  .service-1 > .container > .services > .row.p {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .service-1 > .container > section.services > .row {
+    width: 100%;
+    margin: 0 !important;
   }
 
   .contact-form {
@@ -669,11 +678,10 @@ img.img-fluid.overlay-image.img-3 {
 
   h1.title {
     font-size: 10px;
-    margin-top: 38px;
   }
 
   h2.title-1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   ul li {
@@ -1002,14 +1010,10 @@ body {
 .services {
   padding: 20px;
 }
-.service-1 {
-  background-image: url(../images/About_page/img07.png);
-}
 .row .col-md-4 {
   margin-bottom: 20px;
   padding: 10px !important;
   position: relative;
-  overflow: hidden;
 }
 .row .col-md-4 img {
   margin-bottom: 10px;
@@ -1083,15 +1087,6 @@ p {
   margin-right: 10px;
   color: #f0ad4e;
 }
-h5.txt-10 {
-  margin-top: 29px;
-  color: gray;
-  font-family: none;
-  padding: 0px 11px !important;
-}
-h3.txt-11 {
-  padding: 0px 11px !important;
-}
 @media (max-width: 768px) {
   .services {
     padding: 10px;
@@ -1101,7 +1096,7 @@ h3.txt-11 {
   }
 
   .row .col-md-4 {
-    padding: 5px !important;
+    padding: 0px !important;
     margin-bottom: 15px;
   }
 
@@ -1139,7 +1134,7 @@ h3.txt-11 {
 @media (max-width: 480px) {
   .services {
     padding: 5px;
-    width: 440px;
+    width: 100%;
   }
 
   .contact-form {
@@ -1168,7 +1163,45 @@ h3.txt-11 {
 
   p {
     font-size: 16px;
-    margin-left: 10px;
+    padding: 0 3px !important;
+    text-align: start !important;
+  }
+  img.img-fluid {
+    width: 461px;
+  }
+  .row .col-md-4 {
+    padding: 0px !important;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .container.mt-5 > section.about-us {
+    width: 100%;
+  }
+  .container.mt-5 > section.about-us > .row {
+    width: 100% !important;
+  }
+  .row .col-md-4 img {
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 97% !important;
+  }
+  h5.txt-10 {
+    text-align: center !important;
+    width: 440px !important;
+  }
+}
+@media (min-width: 360px) {
+  input.button2 {
+    margin-left: -30px;
+  }
+}
+@media (max-width: 320px) {
+  .item {
+    width: 466px;
   }
 }
 
