@@ -2146,5 +2146,5 @@ i.fab.fa-instagram:hover {
   }
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
