@@ -821,7 +821,8 @@ section.about-us {
     .content {
       text-align: center;
       margin: -16% 0% -7% 1%;
-    }
+      width: 320px;
+  }
     .row .col-md-4 {
       padding: 0px !important;
       margin-bottom: 15px;
@@ -871,6 +872,10 @@ section.about-us {
     ul li {
       font-size: 12px;
     }
+    .col-md-6.about-images {
+      width: 320px;
+      text-align: center;
+  }
   
     .signature {
       flex-direction: column;
@@ -898,6 +903,9 @@ section.about-us {
     .services {
       padding: 5px;
     }
+    .col-md-6 {
+      width: 320px;
+  }
   
     .contact-form {
         padding: 15px 30px 15px 43px !important;
@@ -917,6 +925,10 @@ section.about-us {
       padding: 6px !important;
       margin-top: 15px;
     }
+    .col-md-6.about-images {
+      width: 320px;
+      text-align: center;
+  }
   
     button {
       font-size: 14px;
@@ -2104,6 +2116,7 @@ h3.txt-7 {
     #name {
       font-size: 1.2rem;
     }
+    
   }
   
   @media (max-width: 480px) {
@@ -2135,6 +2148,7 @@ h3.txt-7 {
     }
   }
     
+
   
   
   
