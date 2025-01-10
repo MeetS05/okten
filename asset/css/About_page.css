@@ -641,6 +641,10 @@ img.img-fluid.overlay-image.img-3 {
     width: 100%;
     margin: 0 !important;
   }
+  .project-1 > .container.py-5 > .row {
+    width: 100%;
+    margin: 0 !important;
+  }
 
   .service-1 > .container > section.services > .row {
     width: 100%;
