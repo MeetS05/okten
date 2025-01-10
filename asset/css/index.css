@@ -1742,9 +1742,14 @@ input.button2:hover {
   .card.position-relative {
     margin-top: 43px;
   }
+  .row .col-md-4 img {
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 425px;
+}
   @media (max-width: 320px) {
     img.card-img-top {
-      width: 460px;
+      width: 320px;
     }
   }
   /* img {
@@ -1856,8 +1861,9 @@ button.next.rounded-circle-2:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .shadow-effect {
-    padding: 15px;
-  }
+    height: 371px;
+    width: 320px !important;
+}
 
   #customers-testimonials .item {
     padding: 30px;
@@ -1900,7 +1906,8 @@ button.next.rounded-circle-2:hover {
   }
   .shadow-effect {
     height: 371px;
-  }
+    width: 320px !important;
+}
   p {
     text-align: center;
   }
