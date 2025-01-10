@@ -897,6 +897,9 @@ section.about-us {
     .image-stack > img {
       width: 300px !important;
     }
+    .col-md-6 {
+      width: 320px;
+  }
   }
   
   @media (max-width: 480px) {
