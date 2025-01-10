@@ -1517,30 +1517,31 @@ i.fab.fa-linkedin-in,
 i.fab.fa-instagram {
   color: black;
 }
-i.fab.fa-facebook-f:hover {
+i.fab.fa-facebook-f:hover{
   color: #f5a623;
 }
-i.fab.fa-twitter:hover {
+i.fab.fa-twitter:hover{
   color: #f5a623;
 }
-i.fab.fa-linkedin-in:hover {
+i.fab.fa-linkedin-in:hover{
   color: #f5a623;
 }
-i.fab.fa-instagram:hover {
+i.fab.fa-instagram:hover{
   color: #f5a623;
 }
 .pages li a {
   color: #0a0a09 !important;
 }
-.pages li a:hover {
+.pages li a:hover{
   color: #f5a623 !important;
 }
-.services li a {
+.services li a{
   color: #000;
 }
-.services li a:hover {
+.services li a:hover{
   color: #f5a623;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -1593,6 +1594,6 @@ i.fab.fa-instagram:hover {
     font-size: 28px;
   }
   svg#allSvg {
-    width: 366px;
+    width: 100%;
   }
 }
