@@ -2112,6 +2112,9 @@ i.fab.fa-instagram:hover {
   #name {
     font-size: 1.2rem;
   }
+  svg#allSvg {
+    width: 315px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2142,6 +2145,6 @@ i.fab.fa-instagram:hover {
     width: 366px;
   }
 }
-body{
+body {
   overflow-x: hidden;
 }
