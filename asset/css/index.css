@@ -1760,6 +1760,10 @@ input.button2:hover {
       width: 460px;
     }
   }
+  input.button2 {
+    position: relative;
+    left: 354px;
+}
   /* img {
   width: 436px !important;
 }   */
