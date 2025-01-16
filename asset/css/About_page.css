@@ -100,6 +100,9 @@ body {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: hidden;
 }
+.menu ul li ul li {
+  padding: 10px 0px !important;
+}
 
 .menu ul li a:hover > ul,
 .menu ul li ul a:hover > ul {

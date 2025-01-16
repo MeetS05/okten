@@ -95,7 +95,7 @@
   transition: all 0.9s ease-in-out;
 }
 .menu ul li ul li {
-  padding: 10px 0px;
+  padding: 10px 0px !important;
 }
 .menu ul li ul li a {
   color: black;
