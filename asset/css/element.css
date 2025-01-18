@@ -1076,6 +1076,18 @@ img.img-fluid {
       justify-content: center; 
   }
 }
+@media (max-width: 430px) {
+  .main-inner1>button {
+    width: 104px;
+}
+.main-inner2>button {
+  width: 104px;
+}
+.main-inner3>button {
+  width: 104px;
+}
+  
+}
 /* tabs end */
 
 /* faq item start */
