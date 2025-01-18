@@ -914,43 +914,43 @@ img.img-fluid {
     font-size: 14px; 
   }
 }
-@media (min-width:420px) {
+@media (min-width: 420px) {
   .button-1>button {
     width: 97px !important;
 }
 .button-2>button {
-  width: 97px;
+  width: 97px !important;
 }
 .button-2{
   padding: 0px 9px !important;
 
 }
 .button-3>button {
-  width: 97px;
+  width: 97px !important;
 }
 .button-4>button {
-  width: 110px;
+  width: 110px !important;
 }
 .button-5>button {
-  width: 110px;
+  width: 110px !important;
 }
 .button-5{
   padding: 0PX 9PX !important;
 }
 .button-6>button {
-  width: 110px;
+  width: 110px !important;
 }
 .button-7>button {
-  width: 130px;
+  width: 130px !important;
 }
 .button-8>button {
-  width: 130px;
+  width: 130px !important;
 }
 .button-8{
   padding: 0px 9px !important;
 }
 .button-9>button {
-  width: 130px;
+  width: 130px !important;
 }
   
 }
