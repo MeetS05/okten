@@ -916,41 +916,41 @@ img.img-fluid {
 }
 @media (max-width: 430px) {
   .button-1>button {
-    width: 97px !important;
+    width: 90px !important;
 }
 .button-2>button {
-  width: 97px !important;
+  width: 90px !important;
 }
 .button-2{
   padding: 0px 9px !important;
 
 }
 .button-3>button {
-  width: 97px !important;
+  width: 90px !important;
 }
 .button-4>button {
-  width: 110px !important;
+  width: 100px !important;
 }
 .button-5>button {
-  width: 110px !important;
+  width: 100px !important;
 }
 .button-5{
   padding: 0PX 9PX !important;
 }
 .button-6>button {
-  width: 110px !important;
+  width: 100px !important;
 }
 .button-7>button {
-  width: 130px !important;
+  width: 120px !important;
 }
 .button-8>button {
-  width: 130px !important;
+  width: 120px !important;
 }
 .button-8{
   padding: 0px 9px !important;
 }
 .button-9>button {
-  width: 130px !important;
+  width: 120px !important;
 }
   
 }
