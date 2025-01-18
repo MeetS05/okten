@@ -914,7 +914,7 @@ img.img-fluid {
     font-size: 14px; 
   }
 }
-@media (min-width:425px) {
+@media (min-width:420px) {
   .button-1>button {
     width: 97px !important;
 }
