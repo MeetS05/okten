@@ -5,6 +5,9 @@
   box-sizing: border-box;
   overflow: visible;
 }
+body{
+  overflow-x: hidden !important;
+}
 
 /* Navbar Styles */
 
@@ -1755,14 +1758,14 @@ input.button2:hover {
     margin-top: 43px;
     width: 100%;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 420px) {
     img.card-img-top {
       width: 460px;
     }
   }
   input.button2 {
     position: relative;
-    left: 354px;
+    left: 354px !important;
 }
   /* img {
   width: 436px !important;
@@ -2159,3 +2162,28 @@ i.fab.fa-instagram:hover {
     width: 100%;
   }
 }
+
+ /* scroll top */
+ .scroll-top {
+  display: none; 
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 2;
+  /* font-size: 18px; */
+  background-color: #f8c12c;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  /* padding: 10px 15px; */
+  text-align: center;
+  /* border-radius: 5px; */
+  transition: background-color 0.3s;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+/* scroll top */
