@@ -612,6 +612,12 @@ p.card-text {
   width: 436px !important;
 }   */
 }
+@media (max-width:420px) {
+  input.button2 {
+    display: none;
+}
+  
+}
 /*  Latest News end */
 
 

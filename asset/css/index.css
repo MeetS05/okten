@@ -1767,6 +1767,9 @@ input.button2:hover {
     position: relative;
     left: 354px !important;
 }
+input.button2 {
+  display: none !important;
+}
   /* img {
   width: 436px !important;
 }   */
