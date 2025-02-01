@@ -570,7 +570,8 @@ input.button2 {
   width: 82px;
   position: inherit;
   bottom: 26px;
-  left: 277.7px;
+  left: 279px;
+  position: relative;
   background-color: #f5a623;
   border: none;
   padding: 3px 9px !important;

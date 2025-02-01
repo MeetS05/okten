@@ -540,7 +540,7 @@ button:hover{
   background-position: center center !important;
   background-repeat: no-repeat !important; 
   background-size: cover !important;
-  height: 310px;
+  height: 400px;
   position: relative;
   display: flex;
   align-items: center;
@@ -589,7 +589,7 @@ button.btn.mt-3:hover{
   transition: all 0.7s ease-in-out;
 }
 h4.text {
-  font-size: 31px;
+  font-size: 38px !important;
   font-weight: 600;
 }
   /* main section */
@@ -603,12 +603,13 @@ body {
   font-family: Arial, sans-serif;
 }
 h2.mb-4 {
-  font-size: 20px !important;
+  font-size: 30px !important;
   color: white;
 }
 p.mb-5 {
-  font-size: 13px;
+  font-size: 17px;
   color: white;
+  font-family: system-ui;
 }
 h4 {
   color: white !important;
@@ -778,15 +779,15 @@ button.next.rounded-circle {
 }
 
 button.prev.rounded-circle {
-  left: 34px;
+  left: 40px;
   position: absolute;
-  top: 436%;
+  top: 270%;
 }
 
 button.next.rounded-circle {
-  right: 34px;
+  right: 40px;
   position: absolute;
-  top: 436%;
+  top: 270%;
 }
 
 button.prev.rounded-circle:hover,
@@ -812,3 +813,191 @@ button.next.rounded-circle:hover {
 
 
 /* Meet Out Team end */
+
+
+/* footer start */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer .contact-info,
+.footer .pages,
+.footer .services {
+  list-style: none;
+  padding: 0;
+}
+.footer .contact-info li,
+.footer .pages li,
+.footer .services li {
+  margin-bottom: 10px;
+}
+.footer .contact-info li i {
+  margin-right: 10px;
+  color: #ffc107;
+}
+.footer .pages li a,
+.footer .services li a {
+  color: #000;
+  text-decoration: none;
+}
+.footer .social-icons-2 a {
+  margin-right: 15px;
+  color: #6c757d;
+}
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c757d;
+}
+
+.body {
+  background-color: rgb(39, 44, 67);
+}
+
+#name {
+  width: fit-content;
+  opacity: 0;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+path {
+  fill: #f5a623 !important;
+}
+
+path:hover {
+  fill: #0c0404 !important;
+}
+
+#timeCont {
+  background-color: rgb(252, 250, 250);
+  width: fit-content;
+  font-size: 1.5rem;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 3px solid #f5a623;
+}
+
+svg path {
+  cursor: pointer;
+}
+li.abc {
+  margin-left: 49px;
+}
+li.abc-1 {
+  margin-right: 24px;
+}
+li.abc-2 {
+  margin-right: 6px;
+}
+i.fab.fa-facebook-f,
+i.fab.fa-twitter,
+i.fab.fa-linkedin-in,
+i.fab.fa-instagram {
+  color: black;
+}
+i.fab.fa-facebook-f:hover {
+  color: #f5a623;
+}
+i.fab.fa-twitter:hover {
+  color: #f5a623;
+}
+i.fab.fa-linkedin-in:hover {
+  color: #f5a623;
+}
+i.fab.fa-instagram:hover {
+  color: #f5a623;
+}
+.pages li a {
+  color: #0a0a09 !important;
+}
+.pages li a:hover {
+  color: #f5a623 !important;
+}
+.services li a {
+  color: #000;
+}
+.services li a:hover {
+  color: #f5a623;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer .contact-info li,
+  .footer .pages li,
+  .footer .services li {
+    text-align: center;
+  }
+
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+
+  #timeCont {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  #name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer .contact-info li,
+  .footer .pages li,
+  .footer .services li {
+    font-size: 0.9rem;
+  }
+
+  #timeCont {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  #name {
+    font-size: 1rem;
+  }
+  p#namep {
+    text-align: center;
+    margin-left: 124px;
+    font-size: 28px;
+  }
+  svg#allSvg {
+    width: 100%;
+  }
+}
+
+ /* scroll top */
+ .scroll-top {
+  display: none; 
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 2;
+  /* font-size: 18px; */
+  background-color: #f8c12c;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  /* padding: 10px 15px; */
+  text-align: center;
+  /* border-radius: 5px; */
+  transition: background-color 0.3s;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+/* scroll top */

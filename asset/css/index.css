@@ -1507,6 +1507,49 @@ button.next.rounded-circle-4 {
   bottom: 75px;
   left: 578px;
 }
+.tab-pane > .row > .col-md-6 ,.owl-carousel>.item{
+  position: relative;
+}
+.tab-pane > .row > .col-md-6 >.buttons,.item>.buttons{
+  display: flex;
+}
+
+button.abc {
+  position: absolute;
+  top: 65px; 
+  left: 95px;
+  opacity: 0; 
+  transform: translateY(-100px); 
+  transition: all 0.5s ease-in-out;
+}
+button.abc>i.fa-solid.fa-magnifying-glass {
+  background: white;
+  padding: 19px !important;
+  color: black;
+}
+button.cda>i.fa-solid.fa-link {
+  background: black;
+  padding: 20px !important;
+}
+button.cda {
+  position: absolute;
+  top: 65px; 
+  left: 170px;
+  opacity: 0; 
+  transform: translateY(-100px); 
+  transition: all 0.7s ease-in-out;
+}
+
+
+.tab-pane > .row > .col-md-6:hover button.abc,.item>img:hover button.abc {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.tab-pane > .row > .col-md-6:hover button.cda,.item>img:hover button.cda {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
 
 /* Fully optimized responsive adjustments */
 
@@ -1726,8 +1769,9 @@ input.button1:hover {
 input.button2 {
   width: 82px;
   position: inherit;
+  position: relative;
   bottom: 26px;
-  left: 277.7px;
+  left: 309px;
   background-color: #f5a623;
   border: none;
   padding: 3px 9px !important;
@@ -1978,7 +2022,7 @@ input#email {
 
 input.btn-2 {
   width: 100%;
-  padding: 6px 13px !important;
+  padding: 6px 40px !important;
   border-radius: 43px;
   border: 1px solid white;
   background-color: transparent;
@@ -2190,3 +2234,5 @@ i.fab.fa-instagram:hover {
   border-radius: 50%;
 }
 /* scroll top */
+
+
